@@ -1,0 +1,59 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Untitled Document.md</title><script type="text/javascript">
+//<![CDATA[
+window.__cfRocketOptions = {byc:0,p:1521556077,petok:"cf4b0db69229883ffd6fc8240b1e17c2a429c4d3-1521807539-1800"};
+//]]>
+</script>
+<script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/935cb224/cloudflare-static/rocket.min.js"></script>
+<style></style></head><body id="preview">
+<h1><a id="Frontend_Coding_Challenge_0"></a>Frontend Coding Challenge</h1>
+<h2><a id="Overview_2"></a>Overview</h2>
+<p>To complete this challenge, you will need to write a simple <a href="https://facebook.github.io/react/">React</a> web app, and provide us the source files to be built.</p>
+<p>The purpose of this challenge is to assess your <strong>skills and approach to composing a simple web app</strong> given a set of screens and an API feed.  We will also assess the <strong>generated HTML, CSS, and JS</strong> output.</p>
+<h2><a id="The_Challenge_8"></a>The Challenge</h2>
+<p>It’s pretty simple. Using the provided screens as a reference, you’ll need to build a set of React components to render the app.  You’ll also need to request a JSON feed, filter that data, and use the relevant fields. While requesting JSON feed, we also ask you to use <a href="https://redux.js.org/">Redux</a> for storing incoming data. So this stored data will be used when you build the app and the components. Finally, we also recommend you to use <a href="https://github.com/facebook/create-react-app">create-react-app</a> in order not to make basic configuration yourself.</p>
+<p>Although this is a basic exercise, we’ll be looking for <strong>simple, well-designed and tested code</strong> in the submission.</p>
+<p>Please include a <code>README</code> with setup instructions, and any tests or other documentation you created as part of your solution.</p>
+<h2><a id="Details_16"></a>Details</h2>
+<p>You will need to build the following 3 pages with React:</p>
+<ul>
+<li>A “Home” page</li>
+<li>A “Series” page</li>
+<li>A “Movies” page</li>
+</ul>
+<p>The deployable solution should be built in a folder named <strong><code>dist</code></strong> with an entry point file of <strong><code>index.html</code></strong>.</p>
+<p>Please create components for each part of the page (eg. header, content, footer, etc).<br>
+Assets are provided in the <code>assets</code> folder.</p>
+<p>The pages should also be usable on mobile and tablet devices.</p>
+<p>You can assume that you do not have to support legacy browsers without features such as <code>fetch</code> or <code>flexbox</code>.</p>
+<h3><a id="Home_Page_34"></a>“Home” Page</h3>
+<p>Refer to the <a href="./screens/1-home.jpg">screens/1-home.jpg</a> screen.</p>
+<p>This will be your <code>index.html</code> screen.</p>
+<p>You will need to display 2 titles, which link to the “Series” page and the “Movies” page.</p>
+<h3><a id="Series_and_Movies_Pages_43"></a>“Series” and “Movies” Pages</h3>
+<p>Refer to the <a href="./screens/2-series.jpg">screens/2-series.jpg</a> and <a href="./screens/3-movies.jpg">screens/3-movies.jpg</a> screens.</p>
+<p>For each page you will need to fetch this JSON feed <a href="https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json">feed/sample.json</a>, then:</p>
+<ul>
+<li>Display the first 21 <code>entries</code></li>
+<li>Where the entry has a <code>releaseYear</code> attribute value &gt;= <code>2010</code></li>
+<li>Sorted by the <code>title</code> attribute value in ascending alphanumeric order</li>
+</ul>
+<p>For the “Series” page filter on:</p>
+<ul>
+<li>Where the entry has a <code>programType</code> attribute value of <code>series</code></li>
+</ul>
+<p>For the “Movies” page filter on:</p>
+<ul>
+<li>Where the entry has a <code>programType</code> attribute value of <code>movie</code></li>
+</ul>
+<p>The attributes you should use to display the entries are:</p>
+<ul>
+<li><code>title</code></li>
+<li><code>images</code> → <code>Poster Art</code> → <code>url</code></li>
+</ul>
+<p>You will also need to handle the loading and error states, of fetching the JSON feed:</p>
+<ul>
+<li>“Loading” state <a href="./screens/1.1-loading.jpg">screens/1.1-loading.jpg</a></li>
+<li>“Error” state <a href="./screens/1.2-error.jpg">screens/1.2-error.jpg</a></li>
+</ul>
+
+</body></html>
