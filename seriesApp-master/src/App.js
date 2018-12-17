@@ -53,8 +53,8 @@ class App extends Component {
     } else {
       return (
         <div>         
-            <Header />
-            <Home  /> 
+          <Header />
+          <Home  /> 
           <Movies {...this.state} />
           <Series {...this.state} />      
         </div>

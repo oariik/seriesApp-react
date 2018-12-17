@@ -16,7 +16,6 @@ class Series extends Component {
      
       return (
         
-        //Bu kısım render ediliyor 
         <div key={item.title} >
        
           <Col  xs={2} md={2}>
@@ -36,7 +35,6 @@ class Series extends Component {
            </Col>
             
         </div>
-        // Bu render ediliyor
       );
     });
  
